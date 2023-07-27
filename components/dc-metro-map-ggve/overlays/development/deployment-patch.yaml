@@ -1,0 +1,17 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: dc-metro-map-ggve
+spec:
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-appstudio-qe/release-e2e-pyxis-tenant/appstudio/dc-metro-map-ggve@sha256:f4c5e4652a57c73f0d92fb105506cf418d3f8bdd964864ccb19c4587062a38e7
+        name: my-nodejs
+        resources: {}
+status: {}
